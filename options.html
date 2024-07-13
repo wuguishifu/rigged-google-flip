@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Rigged Google Coin Flip</title>
+
+    <link rel="stylesheet" href="options.css" type="text/css">
+    <link rel="stylesheet" href="toggleswitch.css" type="text/css">
+</head>
+
+<body>
+    <div id="wrapper">
+        <p>bo's weighted coin</p>
+
+        <span>Enabled</span>
+        <input id="extensionEnabled" type="checkbox">
+
+        <br>
+
+        <div style="display: flex; flex-direction: row">
+            <span>Tails</span>
+            <label class="switch">
+                <input id="targetHeads" type="checkbox">
+                <span class="slider"></span>
+            </label>
+            <span>Heads</span>
+        </div>
+    </div>
+
+    <script src="options.js"></script>
+</body>
+
+</html>

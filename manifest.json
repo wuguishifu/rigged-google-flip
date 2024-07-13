@@ -1,0 +1,27 @@
+{
+    "manifest_version": 3,
+    "name": "Rigged Google Coin Flip",
+    "description": "Rigs the Google coin flip",
+    "version": "1.0",
+    "permissions": [
+        "activeTab",
+        "storage"
+    ],
+    "action": {
+        "default_popup": "options.html"
+    },
+    "content_scripts": [
+        {
+            "js": [
+                "default.js"
+            ],
+            "css": [
+                "default.css"
+            ],
+            "matches": [
+                "*://*.google.com/*"
+            ],
+            "run_at": "document_end"
+        }
+    ]
+}
